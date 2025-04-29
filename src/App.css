@@ -157,6 +157,10 @@ h6 {
 
 .ntf__image {
   border-radius: 20px;
+  background: url(../src/assets/image-equilibrium.jpg) 0 0 no-repeat;
+  height: 300px;
+  background-position: center;
+  width: 100%;
 }
 .ntf__heading {
   color: var(--clr-neutral-White);
@@ -196,4 +200,18 @@ h6 {
 
 .ntf__author_text-bold {
   color: var(--clr-neutral-White);
+}
+
+/* HOVER EFFECTS */
+.ntf__author_text-bold:is(:hover, :focus) {
+  color: var(--clr-primary-cyan-400);
+}
+
+.ntf__heading:is(:hover, :focus) {
+  color: var(--clr-primary-cyan-400);
+}
+
+.ntf__image:is(:hover, :focus) {
+  background-color: var(--clr-primary-cyan-400);
+  background-blend-mode: lighten;
 }

@@ -12,13 +12,7 @@ function App() {
     <>
       <main className="main">
         <article className="ntf">
-          <picture>
-            <img
-              className="ntf__image"
-              src={mainImage}
-              alt="Equilibrium #3429"
-            />
-          </picture>
+          <div className="ntf__image"></div>
           <h1 className="ntf__heading">Equilibrium #3429</h1>
           <p className="ntf__description">
             Our Equilibrium collection promotes balance and calm.
