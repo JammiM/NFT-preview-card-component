@@ -1,6 +1,8 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import avatarImage from "./assets/image-avatar.png";
+import mainImage from "./assets/image-equilibrium.jpg";
 import "./App.css";
 
 function App() {
@@ -8,37 +10,34 @@ function App() {
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-      <p className="heading">Equilibrium #3429 </p>
-      <p>Our Equilibrium collection promotes balance and calm.</p>
-      <p>0.041 ETH</p> <p>3 days left </p>
-      <p>Creation of Jules Wyvern</p>
-      <div className="attribution">
+      <main className="main">
+        <article className="ntf">
+          <picture className="ntf__image">
+            <img src={mainImage} alt="Equilibrium #3429" />
+          </picture>
+          <h1 className="ntf__heading">Equilibrium #3429</h1>
+          <p className="ntf__description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+          <p className="ntf__price">0.041 ETH</p>
+          <p className="ntf__days">3 days Left</p>
+          <div className="ntf__author">
+            <img className="ntf__author-image" src={avatarImage} alt="" />
+            <p className="ntf__author_text">
+              Creation of
+              <span className="ntf__author_text-bold">Jules Wyvern</span>
+            </p>
+          </div>
+        </article>
+      </main>
+
+      <footer className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor
         </a>
         . Coded by <a href="#">Your Name Here</a>.
-      </div>
+      </footer>
     </>
   );
 }
