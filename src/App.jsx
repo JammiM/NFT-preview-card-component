@@ -12,21 +12,26 @@ function App() {
     <>
       <main className="main">
         <article className="ntf">
-          <picture className="ntf__image">
-            <img src={mainImage} alt="Equilibrium #3429" />
+          <picture>
+            <img
+              className="ntf__image"
+              src={mainImage}
+              alt="Equilibrium #3429"
+            />
           </picture>
           <h1 className="ntf__heading">Equilibrium #3429</h1>
           <p className="ntf__description">
             Our Equilibrium collection promotes balance and calm.
           </p>
-          <p className="ntf__price">0.041 ETH</p>
-          <p className="ntf__days">3 days Left</p>
+          <div className="ntf__tech_info">
+            <p className="ntf__price">0.041 ETH</p>
+            <p className="ntf__days">3 days Left</p>
+          </div>
+          <hr />
           <div className="ntf__author">
             <img className="ntf__author-image" src={avatarImage} alt="" />
-            <p className="ntf__author_text">
-              Creation of
-              <span className="ntf__author_text-bold">Jules Wyvern</span>
-            </p>
+            <p className="ntf__author_text">Creation of</p>
+            <span className="ntf__author_text-bold">Jules Wyvern</span>
           </div>
         </article>
       </main>
