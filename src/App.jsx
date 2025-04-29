@@ -28,9 +28,11 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-      Equilibrium #3429 Our Equilibrium collection promotes balance and calm.
-      0.041 ETH 3 days left Creation of Jules Wyvern
-      <div class="attribution">
+      <p className="heading">Equilibrium #3429 </p>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <p>0.041 ETH</p> <p>3 days left </p>
+      <p>Creation of Jules Wyvern</p>
+      <div className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
           Frontend Mentor

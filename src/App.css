@@ -1,3 +1,26 @@
+:root {
+  --clr-primary-blue-500: hsl(215, 51%, 70%);
+  --clr-primary-cyan-400: hsl(178, 100%, 50%);
+
+  --clr-neutral-blue-950: hsl(217, 54%, 11%); /* (main BG) */
+  --clr-neutral-blue-900: hsl(216, 50%, 16%); /* (card BG) */
+  --clr-neutral-Blue-800: hsl(215, 32%, 27%); /* (line) */
+  --clr-neutral-White: hsl(0, 0%, 100%);
+
+  --fs: 1.125em;
+
+  --ff-base: "Outfit", sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 600;
+}
+
+.heading {
+  font-family: var(--ff-base);
+  font-size: var(--fw-bold);
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
