@@ -1,5 +1,5 @@
 :root {
-  --clr-primary-blue-500: hsl(215, 51%, 70%);
+  --clr-primary-blue-500: hsl(0, 0%, 69%);
   --clr-primary-cyan-400: hsl(178, 100%, 50%);
 
   --clr-neutral-blue-950: hsl(217, 54%, 11%); /* (main BG) */
@@ -29,7 +29,7 @@
 
 * {
   margin: 0;
-  transition: 0.5s ease;
+  /* transition: 0.5s ease; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -108,7 +108,7 @@ h6 {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #b5b5b5;
 }
 
 .ntf {
