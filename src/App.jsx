@@ -2,6 +2,7 @@ import avatarImage from "./assets/image-avatar.png";
 import mainImage from "./assets/image-equilibrium.jpg";
 import iconView from "./assets/icon-view.svg";
 import "./App.css";
+import "./index";
 
 function App() {
   return (
