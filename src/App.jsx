@@ -3,6 +3,7 @@ import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import avatarImage from "./assets/image-avatar.png";
 import mainImage from "./assets/image-equilibrium.jpg";
+import iconView from "./assets/icon-view.svg";
 import "./App.css";
 
 function App() {
@@ -12,7 +13,12 @@ function App() {
     <>
       <main className="main">
         <article className="ntf">
-          <div className="ntf__image"></div>
+          <div className="ntf__image_container">
+            <img src={mainImage} alt="" className="ntf__image" />
+            <div className="ntf__eye_icon_holder">
+              <img src={iconView} alt="" className="text" />
+            </div>
+          </div>
           <h1 className="ntf__heading">Equilibrium #3429</h1>
           <p className="ntf__description">
             Our Equilibrium collection promotes balance and calm.

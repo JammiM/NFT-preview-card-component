@@ -98,7 +98,7 @@ h6 {
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1.5rem;
   text-align: center;
 }
 
@@ -147,25 +147,26 @@ h6 {
 }
 
 .ntf {
+  margin-top: 40px;
   background-color: var(--clr-neutral-blue-900);
-  border-radius: 40px;
-  padding: 20px;
+  border-radius: 14px;
+  padding: 25px;
 
   display: flex;
   flex-direction: column;
 }
 
 .ntf__image {
-  border-radius: 20px;
-  background: url(../src/assets/image-equilibrium.jpg) 0 0 no-repeat;
-  height: 300px;
-  background-position: center;
+  border-radius: 6px;
+  opacity: 1;
+  display: block;
   width: 100%;
-  background-size: contain;
+  height: auto;
+  backface-visibility: hidden;
 }
 .ntf__heading {
   color: var(--clr-neutral-White);
-  font-size: 0.85em;
+  font-size: 1.2em;
   text-align: left;
   padding-top: 20px;
 }
@@ -174,6 +175,7 @@ h6 {
   padding-bottom: 10px;
   padding-top: 10px;
   text-align: left;
+  font-size: 0.88em;
 }
 
 .ntf__tech_info {
@@ -222,7 +224,37 @@ h6 {
   color: var(--clr-primary-cyan-400);
 }
 
-.ntf__image:is(:hover, :focus) {
-  background-color: var(--clr-primary-cyan-400);
-  background-blend-mode: lighten;
+.ntf__image_container {
+  position: relative;
+  width: 100%;
+}
+
+.ntf__image:is(:hover, :focus) .ntf__image {
+  opacity: 0.3;
+}
+
+.ntf__image_container:is(:hover, :focus) .ntf__eye_icon_holder {
+  opacity: 1;
+}
+
+.ntf__image_container:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 255, 247, 0.214);
+  z-index: 999;
+  border-radius: 6px;
+}
+
+.ntf__eye_icon_holder {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
