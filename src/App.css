@@ -153,6 +153,31 @@ h6 {
 
 .ntf__price {
   color: var(--clr-primary-cyan-400);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ntf__price::before {
+  content: "";
+  background-image: url(./assets/icon-ethereum.svg);
+  background-size: 11px 18px;
+  height: 18px;
+  width: 11px;
+}
+
+.ntf__days::before {
+  content: "";
+  background-image: url(./assets/icon-clock.svg);
+  background-size: 17px 17px;
+  height: 17px;
+  width: 17px;
+}
+
+.ntf__days {
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .ntf__author {
