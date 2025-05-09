@@ -34,10 +34,13 @@ function App() {
 
       <footer className="attribution">
         Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+        <a
+          href="https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U"
+          target="_blank"
+        >
           Frontend Mentor
         </a>
-        . Coded by <a href="#">Your Name Here</a>.
+        . Coded by <a href="https://github.com/JammiM">James Morrissey</a>.
       </footer>
     </>
   );
