@@ -248,3 +248,31 @@ h6 {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@media (min-width: 375px) {
+  .main {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+  }
+
+  .ntf {
+    max-width: 350px;
+    height: 595px;
+  }
+
+  .ntf__description {
+    padding-top: 16px;
+    font-size: 1em;
+  }
+
+  .ntf__tech_info {
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+
+  .ntf__author {
+    padding-top: 8px;
+    padding-bottom: 18px;
+  }
+}
