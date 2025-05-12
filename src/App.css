@@ -100,6 +100,7 @@ h6 {
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 20px;
 }
 .attribution a {
   color: #b5b5b5;
@@ -197,6 +198,7 @@ h6 {
 
 .ntf__author_text-bold {
   color: var(--clr-neutral-White);
+  margin-left: 5px;
 }
 
 /* HOVER EFFECTS */
