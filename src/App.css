@@ -39,6 +39,7 @@ body {
   font-family: var(--ff-base);
   font-size: var(--fs);
   font-weight: var(--fw-regular);
+  min-height: 100vh;
 }
 
 img,
